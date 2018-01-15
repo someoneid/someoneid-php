@@ -6,7 +6,7 @@
     $SOMEONE_CALLBACK_URI = "http://127.0.0.1/php-sample/index.php";
 	
 
-    $someone = new LogmebotClient($SOMEONE_CLIENT_ID, $SOMEONE_CLIENT_SECRET, $SOMEONE_CALLBACK_URI);
+    $someone = new SomeoneClient($SOMEONE_CLIENT_ID, $SOMEONE_CLIENT_SECRET, $SOMEONE_CALLBACK_URI);
     
     $exampleResult = "Unauthorized";
 
