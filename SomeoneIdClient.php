@@ -81,8 +81,8 @@
                 $result = curl_exec($curl);
                 $result_obj = json_decode($result, true);
                         
-                $access_token = $result_obj['access_token']; // PROVIDER SPECIFIC: this is how Facebook returns the access token KEEP THIS PROTECTED!
-                $expires_in = $result_obj['expires_in']; // PROVIDER SPECIFIC: this is how Facebook returns the access token's expiration
+                $access_token = $result_obj['access_token']; 
+                $expires_in = $result_obj['expires_in'];
                 $expires_at = time() + $expires_in;
 
                 if (!$access_token || !$expires_in) {
